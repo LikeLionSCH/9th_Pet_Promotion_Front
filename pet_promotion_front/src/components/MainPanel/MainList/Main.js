@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function UserMain() {
+export default function Main() {
     return (
         <div>
-            유저 메인 
+            로그인 후 메인
         </div>
     )
 }
