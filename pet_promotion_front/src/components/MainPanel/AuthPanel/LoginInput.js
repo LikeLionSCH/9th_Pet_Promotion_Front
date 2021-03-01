@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const LoginDiv = styled.div`
     width: 800px;
@@ -36,7 +37,7 @@ export default function LoginInput() {
         <LoginDiv>
             <InputStyle placeholder="아이디를 입력하세요."></InputStyle>
             <InputStyle placeholder="비밀번호를 입력하세요."></InputStyle>
-            <LoginBtn>로그인</LoginBtn>
+            <Link to="/"><LoginBtn>로그인</LoginBtn></Link>
         </LoginDiv>
     )
 }
