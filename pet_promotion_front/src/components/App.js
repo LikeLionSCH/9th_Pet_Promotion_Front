@@ -1,6 +1,12 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
-
+import Auth from '../components/MainPanel/AuthPanel/Auth';
+import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
+import AnimalPostCreate from './MainPanel/Animal/AnimalPost/AnimalPostCreate'
+import AnimalPostMain from './MainPanel/Animal/AnimalPost/AnimalPostMain';
+import AnimalDetailMain from './MainPanel/Animal/AnimalDetail/AnimalDetailMain';
+import UserMain from './MainPanel/User/UserMain';
+import Main from './MainPanel/MainList/Main';
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -55,6 +61,16 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
+      <div>
+        <Router>
+          <Route exact path="/" component={Main} render={()=> <Redirect to="auth" />} />
+          <Route path="/auth" component={Auth} />
+          <Route path="/animalpostmain" component={AnimalPostMain} />
+          <Route path="/animaldetailmain" component={AnimalDetailMain} />
+          <Route path="/animalpostcreate" component={AnimalPostCreate} />
+          <Route path="/usermain" component={UserMain} />
+        </Router>
+      </div>
     </>
   );
 }
