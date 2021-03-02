@@ -55,7 +55,7 @@ export default function LoginInput() {
     return (
         <LoginDiv>
             <InputStyle value={Username} onChange={(e)=>SetUsername(e.target.value)} placeholder="아이디를 입력하세요."></InputStyle>
-            <InputStyle value={Password} onChange={(e)=>SetPassword(e.target.value)} placeholder="비밀번호를 입력하세요."></InputStyle>
+            <InputStyle type="password" value={Password} onChange={(e)=>SetPassword(e.target.value)} placeholder="비밀번호를 입력하세요."></InputStyle>
             <LoginBtn onClick={handleUserLogin}>로그인</LoginBtn>
         </LoginDiv>
     )
