@@ -1,6 +1,6 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
-import {BrowserRouter as Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import AnimalPostCreate from './MainPanel/Animal/AnimalPost/AnimalPostCreate'
 import AnimalPostMain from './MainPanel/Animal/AnimalPost/AnimalPostMain';
 import AnimalDetailMain from './MainPanel/Animal/AnimalDetail/AnimalDetailMain';
@@ -60,7 +60,6 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <div>
         <Switch>
           {/* 변경 점 */}
           <Route exact path='/' component={Main}/> 
@@ -70,7 +69,6 @@ const App = () => {
           <Route exact path="/animalpostcreate" component={AnimalPostCreate} />
           <Route exact path="/usermain" component={UserMain} />
         </Switch>
-      </div>
     </>
   );
 }
