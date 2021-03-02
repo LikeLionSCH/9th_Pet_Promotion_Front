@@ -10,7 +10,7 @@ export default function (state = initialCodeState, action) {
         case SET_AUTH_USER:
             return {
                 ...state,
-                currentHTML: action.payload
+                currentAuth: action.payload
             }
         default:
             return state
