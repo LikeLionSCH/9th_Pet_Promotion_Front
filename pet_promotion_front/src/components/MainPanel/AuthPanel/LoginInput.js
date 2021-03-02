@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { useDispatch } from 'react-redux';
+import { UserLogin } from '../../../Api/UserApi';
+import { setCurrentAuth } from '../../../redux/actions/auth_action';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const LoginDiv = styled.div`
     width: 800px;
@@ -18,7 +20,7 @@ const InputStyle = styled.input`
     &:focus{
         border-style:none;
     }
-    `;
+`;
 
 const LoginBtn = styled.button`
     font-family: 'IBMPlexSansKR-Medium';
@@ -29,15 +31,32 @@ const LoginBtn = styled.button`
         cursor: pointer;
         background-color: lightgrey;
     }
-    `;
+`;
+    
 
 
 export default function LoginInput() {
+    
+    const [Username,SetUsername] = useState("");
+    const [Password, SetPassword] = useState("");
+    const dispatch = useDispatch();
+
+    const handleUserLogin = async () => {
+        try {
+            // API 호출 (UserLogin), 비동기
+            // await를 통해 나온 결과 값은 Response(응답 값) 반환
+            const UserToken = await UserLogin(Username, Password); 
+            dispatch(setCurrentAuth(UserToken.data.token)) // Dispatch : Redux State 값을 넣는다
+        } catch(err) {
+            console.log(err)
+        }
+    }
+
     return (
         <LoginDiv>
-            <InputStyle placeholder="아이디를 입력하세요."></InputStyle>
-            <InputStyle placeholder="비밀번호를 입력하세요."></InputStyle>
-            <Link to="/"><LoginBtn>로그인</LoginBtn></Link>
+            <InputStyle value={Username} onChange={(e)=>SetUsername(e.target.value)} placeholder="아이디를 입력하세요."></InputStyle>
+            <InputStyle value={Password} onChange={(e)=>SetPassword(e.target.value)} placeholder="비밀번호를 입력하세요."></InputStyle>
+            <LoginBtn onClick={handleUserLogin}>로그인</LoginBtn>
         </LoginDiv>
     )
 }
