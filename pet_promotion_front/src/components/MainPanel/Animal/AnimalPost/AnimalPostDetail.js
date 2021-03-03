@@ -4,14 +4,10 @@ import pic from '../../../assets/Images/dobu.jpg'
 
 const PetPic=styled.div`
     background: url(${pic}) center center no-repeat;
-    // top: 10px;
-    bottom: 430px;
-    right: 450px;
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-size: contain;
-    // z-index: 400;
-        
+    margin: 3vh 0 ;
     `;
 
 
@@ -27,7 +23,7 @@ const PostDate = styled.span`
 const PostBody = styled.p`
     width: 800px;
     height: auto;
-    min-height: 200px;
+    min-height: 120px;
     font-family: 'IBMPlexSansKR-Light';
     font-size: 20px;
 `

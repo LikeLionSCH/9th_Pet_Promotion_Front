@@ -9,8 +9,8 @@ const LoginDiv = styled.div`
     height: 50px;
     `;
 
-const InputStyle = styled.input`
-    width: 280px;
+export const InputStyle = styled.input`
+    width: ${props => props.Width};
     font-family: 'IBMPlexSansKR-Regular';
     font-size: 25px;
     border-style: none;
@@ -34,7 +34,6 @@ const LoginBtn = styled.button`
 `;
     
 
-
 export default function LoginInput() {
     
     const [Username,SetUsername] = useState("");
@@ -54,7 +53,7 @@ export default function LoginInput() {
 
     return (
         <LoginDiv>
-            <InputStyle value={Username} onChange={(e)=>SetUsername(e.target.value)} placeholder="아이디를 입력하세요."></InputStyle>
+            <InputStyle Width='280px' value={Username} onChange={(e)=>SetUsername(e.target.value)} placeholder="아이디를 입력하세요."></InputStyle>
             <InputStyle type="password" value={Password} onChange={(e)=>SetPassword(e.target.value)} placeholder="비밀번호를 입력하세요."></InputStyle>
             <LoginBtn onClick={handleUserLogin}>로그인</LoginBtn>
         </LoginDiv>
