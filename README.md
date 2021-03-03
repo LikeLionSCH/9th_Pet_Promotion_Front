@@ -13,9 +13,9 @@
 - Components Config 
 
 ## ✔ 체크리스트  
-- [x] 웅앵잉아
-- [x]
-- [x] 강의 듣기
+- [x] Component Config
+- [x] Design
+
 
 ## 🛠 개발 스택  
 - react
