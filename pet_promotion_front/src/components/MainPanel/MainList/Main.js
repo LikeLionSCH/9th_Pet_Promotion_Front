@@ -5,7 +5,7 @@ import Auth from '../AuthPanel/Auth';
 import MainBestList from './MainBestList';
 import MainPetList from './MainPetList';
 import "../../assets/css/style.css";
-import Header from '../Header';
+import Header from '../../Header/Header';
 
 export default function Main() {
     // 리덕스
