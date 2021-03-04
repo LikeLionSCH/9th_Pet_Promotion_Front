@@ -1,6 +1,6 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
-import {BrowserRouter as Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import AnimalPostCreate from './MainPanel/Animal/AnimalPost/AnimalPostCreate'
 import AnimalPostMain from './MainPanel/Animal/AnimalPost/AnimalPostMain';
 import AnimalDetailMain from './MainPanel/Animal/AnimalDetail/AnimalDetailMain';
