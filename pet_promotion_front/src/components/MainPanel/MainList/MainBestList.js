@@ -7,7 +7,6 @@ const BestPicDiv= styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10vh 0 3vh 0;
     `;
 
 const BestPic =styled.div`

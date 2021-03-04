@@ -1,7 +1,7 @@
 import React from 'react'
 import MainBestList from './MainBestList';
 import MainPetList from './MainPetList';
-import Header from '../Header/Header';
+import Header from '../../Header/Header';
 import SideMenu from '../../SidePanel/SideMenu';
 
 
