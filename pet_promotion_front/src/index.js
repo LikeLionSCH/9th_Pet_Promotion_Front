@@ -7,7 +7,6 @@ import { BrowserRouter } from "react-router-dom"; // 변경
 import configureStore from "./store";
 import './index.css';
 
-
 const store = configureStore(reducer);
 
 ReactDOM.render(

@@ -6,6 +6,7 @@ import AnimalPostMain from './MainPanel/Animal/AnimalPost/AnimalPostMain';
 import AnimalDetailMain from './MainPanel/Animal/AnimalDetail/AnimalDetailMain';
 import UserMain from './MainPanel/User/UserMain';
 import Main from './MainPanel/MainList/Main';
+import Maintest from './MainPanel/MainList/Maintest';
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -68,6 +69,7 @@ const App = () => {
           <Route exact path="/animaldetailmain" component={AnimalDetailMain} />
           <Route exact path="/animalpostcreate" component={AnimalPostCreate} />
           <Route exact path="/usermain" component={UserMain} />
+          <Route exact path="/maintest" component={Maintest} />
         </Switch>
     </>
   );

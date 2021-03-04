@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import {InputStyle}  from '../../AuthPanel/LoginInput';
 
 
 const CommentDiv = styled.div`
@@ -10,7 +10,7 @@ const CommentDiv = styled.div`
 
 const CommentTitle = styled.span`
     font-family: 'IBMPlexSansKR-Regular';
-    font-size: 30px;
+    font-size: 30px ;
 `
 
 const CommentWriter = styled.span`
@@ -22,19 +22,12 @@ const CommentBody = styled.span`
     font-family: 'IBMPlexSansKR-Light';
     font-size: 18px;
 `
-
-const CommentInput = styled.input`
-    width: 1000px;
-    font-family: 'IBMPlexSansKR-Regular';
-    font-size: 25px;
-    border-style: none;
-    border-bottom: 1px solid #646464;
-    color: black;
-    margin: 0 3vh;
-    &:focus{
-        border-style:none;
-    }    
+const CommentContainer = styled.div`
+    margin: 2.5vh 0;
+    text-align: ${props => props.textAlign};
 `
+
+
 
 const CommentBtn = styled.button`
     font-family: 'IBMPlexSansKR-Medium';
@@ -52,14 +45,14 @@ const CommentBtn = styled.button`
 export default function AnimalPostComment() {
     return (
         <CommentDiv>
-            <p style={{textAlign:"left"}}>
+            <CommentContainer textAlign='left'>
                 <CommentTitle>댓글</CommentTitle>
-            </p>
-            <p style={{textAlign:"left"}}>
+            </CommentContainer>
+            <CommentContainer textAlign='left'>
                 <CommentWriter>유민</CommentWriter>
                 <CommentBody>너무너무 귀여워염</CommentBody>
-            </p>
-            <CommentInput />
+            </CommentContainer>
+            <InputStyle Width='800px'/>
             <CommentBtn>작성</CommentBtn>
             
         </CommentDiv>

@@ -1,10 +1,49 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import Pic from '../../assets/Images/dobu.jpg'
+
+const BestPicDiv= styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10vh 0 3vh 0;
+    `;
+
+const BestPic =styled.div`
+    background: url(${Pic}) no-repeat;
+    height: 200px;
+    width: 200px;
+    border-radius: 250px;
+    background-size: cover;
+    margin: 3vh 4vh;
+    `;
+
+const BestPicName = styled.p`
+    text-align: center;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-size: 25px;
+    margin-bottom: 6vh ;
+
+    `;
 
 export default function MainBestList() {
     return (
         <div>
-            <Link to="/animaldetailmain">Best 사진 3개씩 뜨는 컴포넌트</Link> 
+            <BestPicDiv>
+                <div>
+                    <BestPic />
+                    <BestPicName>두부</BestPicName>
+                </div>
+                <div>
+                    <BestPic />
+                    <BestPicName>두부</BestPicName>
+                </div>
+                <div>
+                    <BestPic />
+                    <BestPicName>두부</BestPicName>
+                </div>                
+            </BestPicDiv> 
         </div>
     )
 }
