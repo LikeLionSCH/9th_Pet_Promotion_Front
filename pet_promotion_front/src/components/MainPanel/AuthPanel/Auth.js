@@ -5,12 +5,10 @@ import Logo from '../../assets/Images/logo-regular.png'
 
 const LogoImg=styled.div`
     background: url(${Logo}) center center no-repeat;
-    position: fixed;
-    // top: 10px;
-    bottom: 430px;
-    right: 450px;
-    width: 600px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+    margin-bottom: 2vh;
     background-size: contain;
     // z-index: 400;
         
@@ -18,10 +16,11 @@ const LogoImg=styled.div`
 
 const AuthDiv= styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100%vh;
+    width: 100%;
     `;
 
 

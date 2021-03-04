@@ -5,21 +5,25 @@ import { setCurrentAuth } from '../../../redux/actions/auth_action';
 import styled from 'styled-components';
 
 const LoginDiv = styled.div`
-    width: 800px;
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
     `;
 
 export const InputStyle = styled.input`
     width: ${props => props.Width};
+    height: 30px;
     font-family: 'IBMPlexSansKR-Regular';
-    font-size: 25px;
+    font-size: 20px;
     border-style: none;
     border-bottom: 1px solid black;
     color: black;
-    margin: 0 3vh;
+    margin: 2vh;
+    padding: 10px;
     &:focus{
         border-style:none;
     }
+    display: block;
 `;
 
 const LoginBtn = styled.button`
@@ -27,10 +31,19 @@ const LoginBtn = styled.button`
     border-style: none;
     font-size: 25px;
     background-color: white;
+    border: 1px solid lightgrey;
+    margin-top: 5vh;
     &:hover{
         cursor: pointer;
-        background-color: lightgrey;
+        color: #494949;
+        transition: .3s;
+        color: white;
+        background-color: #0093FF;
     }
+
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
 `;
     
 
@@ -53,9 +66,9 @@ export default function LoginInput() {
 
     return (
         <LoginDiv>
-            <InputStyle Width='280px' value={Username} onChange={(e)=>SetUsername(e.target.value)} placeholder="아이디를 입력하세요."></InputStyle>
-            <InputStyle type="password" value={Password} onChange={(e)=>SetPassword(e.target.value)} placeholder="비밀번호를 입력하세요."></InputStyle>
-            <LoginBtn onClick={handleUserLogin}>로그인</LoginBtn>
+                <InputStyle Width='300px' value={Username} onChange={(e)=>SetUsername(e.target.value)} placeholder="아이디를 입력하세요."></InputStyle>
+                <InputStyle Width='300px' type="password" value={Password} onChange={(e)=>SetPassword(e.target.value)} placeholder="비밀번호를 입력하세요."></InputStyle>
+                <LoginBtn onClick={handleUserLogin}>로그인</LoginBtn>
         </LoginDiv>
     )
 }
