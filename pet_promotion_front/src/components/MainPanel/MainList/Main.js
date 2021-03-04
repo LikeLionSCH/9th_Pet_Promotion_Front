@@ -4,6 +4,7 @@ import SideMenu from '../../SidePanel/SideMenu';
 import Auth from '../AuthPanel/Auth';
 import MainBestList from './MainBestList';
 import MainPetList from './MainPetList';
+import "../../assets/css/style.css";
 
 export default function Main() {
     // 리덕스
@@ -13,13 +14,13 @@ export default function Main() {
     return (
         <div>
             { 
-            auth == null ? 
+            auth == null ?
                 <Auth /> :
             <>
                 {/* 베스트 사진 3장 정도 뜨는 컴포넌트  */} 
+                <SideMenu />
                 <MainBestList />
                 <MainPetList />
-                <SideMenu />
             </>
             }
         </div>
