@@ -5,22 +5,24 @@ import Pic2 from '../../assets/Images/doobu2.jpg';
 
 
 const RecentDiv = styled.div`
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     `;
 
 const RecentTitle = styled.p`
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'IBMPlexSansKR-Bold';
     font-size: 22px;
     display: block;
     width: 1000px;
     margin-left: 2vh;
+    color: #0093FF;
     `;
 
 const RecentPicDiv = styled.div`
     display: flex; 
     flex-wrap: wrap;
     width: 1000px;
+    align-items: center;
     `;
 
 const RecentPic = styled.div`
@@ -33,10 +35,10 @@ const RecentPic = styled.div`
     `;
 
 const RecentPicTitle = styled.p`
-    font-family: 'IBMPlexSansKR-Light';
+    font-family: 'IBMPlexSansKR-Regular';
     font-size: 20px;
     text-align: center;
-`;
+    `;
 
 
 const MainPetList = () => {
