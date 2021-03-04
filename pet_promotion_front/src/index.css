@@ -28,6 +28,7 @@
 
 . {
     border-radius: 3px;
-    color: #646464;
+    color: #494949;
     min-height: 500px;
+    transition: .3s;
 }
