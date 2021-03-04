@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import AnimalPostDetail from './AnimalPostDetail'
 import AnimalPostComment from './AnimalPostComment'
+import SideMenu from '../../../SidePanel/SideMenu';
 
 const AnimalMainContainer = styled.div`
     display: flex;
@@ -15,9 +16,11 @@ const AnimalMainContainer = styled.div`
 
 export default function AnimalPostMain() {
     return (
-        <AnimalMainContainer>
-            <AnimalPostDetail />
-            <AnimalPostComment />
-        </AnimalMainContainer>
+        <div>
+            <AnimalMainContainer>
+                <AnimalPostDetail />
+                <AnimalPostComment />
+            </AnimalMainContainer>
+        </div>
     )
 }
