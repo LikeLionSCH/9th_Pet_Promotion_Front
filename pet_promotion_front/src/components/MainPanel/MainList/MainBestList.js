@@ -7,6 +7,7 @@ const BestPicDiv= styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 7vh;
     `;
 
 const BestPic =styled.div`
@@ -21,6 +22,7 @@ const BestPic =styled.div`
 const BestPicName = styled.p`
     text-align: center;
     font-family: 'IBMPlexSansKR-Regular';
+    /* color: white; */
     font-size: 25px;
     margin-bottom: 6vh ;
 
