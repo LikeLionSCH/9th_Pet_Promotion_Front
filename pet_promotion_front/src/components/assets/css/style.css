@@ -1,7 +1,6 @@
-
 /* Individual item */
 .bm-item {
-  display: inline-block; 
+  display: inline-block;
 
   /* Our sidebar item styling */
   text-decoration: none;
@@ -44,9 +43,14 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  /* 색 좀 죽인 색 */
+  /* background: #0050b2; */
+
+  /* 핵심 색 */
+  background: #0093FF;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  opacity: .9;
 }
 
 /* Morph shape necessary with bubble or elastic */

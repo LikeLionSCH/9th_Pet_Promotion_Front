@@ -38,6 +38,7 @@ const RecentPicTitle = styled.p`
     font-family: 'IBMPlexSansKR-Regular';
     font-size: 20px;
     text-align: center;
+    /* color: white; */
     `;
 
 
