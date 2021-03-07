@@ -9,17 +9,16 @@ const CommentDiv = styled.div`
 
 
 const CommentTitle = styled.span`
-    font-family: 'IBMPlexSansKR-Regular';
-    font-size: 30px ;
+    font-family: 'Regular';
+    font-size: 30px;
 `
 
 const CommentWriter = styled.span`
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'Regular';
     font-size: 20px;
 `
 
 const CommentBody = styled.span`
-    font-family: 'IBMPlexSansKR-Light';
     font-size: 18px;
 `
 const CommentContainer = styled.div`

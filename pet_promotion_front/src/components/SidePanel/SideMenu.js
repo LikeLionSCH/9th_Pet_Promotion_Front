@@ -10,7 +10,7 @@ const SideMenu = () => {
         font-size: 25px;
         text-align: center;
         margin-bottom: 20px;
-        font-family: 'IBMPlexSansKR-Regular';
+        font-family: 'Regular';
     `;
 
     return (

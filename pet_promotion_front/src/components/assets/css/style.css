@@ -21,13 +21,21 @@
   position: fixed;
   width: 36px;
   height: 25px;
-  left: 36px;
-  top: 20px;
+  left: 20px;
+  top: 45%;
+}
+
+.bm-burger-button::after {
+  position: fixed;
+  width: 36px;
+  height: 25px;
+  left: 20px;
+  top: 45%;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: white;
 }
 
 /* Position and sizing of clickable cross button */

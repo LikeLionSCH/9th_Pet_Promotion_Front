@@ -21,7 +21,7 @@ const BestPic =styled.div`
 
 const BestPicName = styled.p`
     text-align: center;
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'Regular';
     /* color: white; */
     font-size: 25px;
     margin-bottom: 6vh ;

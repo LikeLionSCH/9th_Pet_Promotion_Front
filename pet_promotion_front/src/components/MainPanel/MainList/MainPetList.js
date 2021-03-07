@@ -10,7 +10,7 @@ const RecentDiv = styled.div`
     `;
 
 const RecentTitle = styled.p`
-    font-family: 'IBMPlexSansKR-Bold';
+    font-family: 'Bold';
     font-size: 22px;
     display: block;
     width: 1000px;
@@ -35,7 +35,7 @@ const RecentPic = styled.div`
     `;
 
 const RecentPicTitle = styled.p`
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'Regular';
     font-size: 20px;
     text-align: center;
     /* color: white; */
