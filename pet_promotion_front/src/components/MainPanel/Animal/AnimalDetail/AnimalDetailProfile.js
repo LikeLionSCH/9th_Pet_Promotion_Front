@@ -22,7 +22,7 @@ const ProfilePic = styled.div `
 
 const ProfileName = styled.p`
     /* text-align: center; */
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'Regular';
     font-size: 25px;
     margin: 10px;
     `;
@@ -40,7 +40,7 @@ const Tmip = styled.p `
     `;
 
 const TmiTitle = styled.span`
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'Regular';
     font-size: 25px;
     display: block;
     width: 200px;
@@ -54,7 +54,7 @@ const ProfileContainer = styled.div`
     `;
 
 const Tmibody = styled.span`
-    font-family: 'IBMPlexSansKR-Light';
+    font-family: 'Light';
     font-size: 22px;
     display: inline-block;
 

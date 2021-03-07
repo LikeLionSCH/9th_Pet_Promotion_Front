@@ -12,11 +12,10 @@ const PetPic=styled.div`
 
 
 const PostTitle = styled.span`
-    font-family: 'IBMPlexSansKR-Medium';
+    font-family: 'Bold';
     font-size: 35px;
 `
 const PostDate = styled.span`
-    font-family: 'IBMPlexSansKR-Light';
     font-size: 20px;
 `
 
@@ -24,7 +23,6 @@ const PostBody = styled.p`
     width: 800px;
     height: auto;
     min-height: 120px;
-    font-family: 'IBMPlexSansKR-Light';
     font-size: 20px;
 `
 

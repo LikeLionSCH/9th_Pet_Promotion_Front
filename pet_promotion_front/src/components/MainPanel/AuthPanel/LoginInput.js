@@ -13,7 +13,7 @@ const LoginDiv = styled.div`
 export const InputStyle = styled.input`
     width: ${props => props.Width};
     height: 30px;
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'Regular';
     font-size: 20px;
     border-style: none;
     border-bottom: 1px solid black;
@@ -27,7 +27,7 @@ export const InputStyle = styled.input`
 `;
 
 const LoginBtn = styled.button`
-    font-family: 'IBMPlexSansKR-Medium';
+    font-family: 'Bold';
     border-style: none;
     font-size: 25px;
     background-color: white;

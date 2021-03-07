@@ -55,6 +55,9 @@ border-spacing: 0;
 a{
   text-decoration: none;
 }
+*{
+  font-family:'Light';
+}
 `;
 
 const App = () => {
