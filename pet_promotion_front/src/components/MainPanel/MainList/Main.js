@@ -6,6 +6,13 @@ import MainBestList from './MainBestList';
 import MainPetList from './MainPetList';
 import "../../assets/css/style.css";
 import Header from '../../Header/Header';
+import styled from 'styled-components';
+
+const Test = styled.div`
+    @media screen and (min-width: 768px) {
+        display: none;
+    }`
+
 
 export default function Main() {
     // 리덕스
@@ -17,7 +24,9 @@ export default function Main() {
             { 
             <>
                 {/* 베스트 사진 3장 정도 뜨는 컴포넌트  */} 
-                <SideMenu />
+                <Test>
+                    <SideMenu />
+                </Test>
                 <MainBestList />
                 <MainPetList />
             </>
